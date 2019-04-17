@@ -8,6 +8,12 @@ class FarmerSerializer(ModelSerializer):
         model = Farmer
         fields= '__all__'
 
+class FarmersSerializer(ModelSerializer):
+
+    class Meta:
+        model = Farmer
+        fields= '__all__'        
+
 class OfficerSerializer(ModelSerializer):
     class Meta:
         model = Officer
