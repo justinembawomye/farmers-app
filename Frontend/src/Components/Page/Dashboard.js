@@ -5,7 +5,7 @@ import Leads from './Leads';
 export default function Dashboard() {
   return (
     <Fragment>
-        <Form/>
+        {/* <Form/> */}
         <Leads/>
     </Fragment>
   )
