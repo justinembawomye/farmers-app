@@ -1,9 +1,7 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
+from . import models
 
-from .models import Farmer
-
-class FarmerSerializer(ModelSerializer):
-
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Farmer
-        fields= ('name',)
+        model = models.CustomUser
+        fields = ('email', 'username', )

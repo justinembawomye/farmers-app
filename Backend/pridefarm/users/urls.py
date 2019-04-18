@@ -1,7 +1,7 @@
-from django.urls import path
-from rest_framework import views
-from .api import FarmerApi
+from django.urls import include, path
 
-urlpatterns=[
-path('api/farmer',FarmerApi.as_view() )
+from . import views
+
+urlpatterns = [
+    path('', views.UserListView.as_view()),
 ]
