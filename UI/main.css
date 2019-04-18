@@ -1,0 +1,20 @@
+.navbar{
+    background-color: rgb(161, 73, 14) !important;
+}
+.login-page{
+    background-color: #ddd;
+}
+
+.login-page .login-box .logo {
+    color: #eee !important;
+}
+.btn-login{
+    background-color: brown !important;
+}
+.login-container{
+    background-color:  rgb(161, 73, 14) 
+}
+
+.signup-page{
+    background-color: #ddd;
+}
