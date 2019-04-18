@@ -18,3 +18,22 @@
 .signup-page{
     background-color: #ddd;
 }
+
+
+.fp-page{
+    background-color: #ddd; 
+}
+
+.forgot-password-container{
+    background-color: brown !important;
+}
+.reset-btn{
+    background-color: brown !important;
+}
+.register-container{
+    background-color: brown !important;
+}
+
+.register-btn{
+    background-color: brown !important;  
+}
