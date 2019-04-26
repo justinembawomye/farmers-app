@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { addlead } from "../../actions/leads";
+import { addlead } from "../actions/leads";
 
 export class Form extends Component {
   state = {

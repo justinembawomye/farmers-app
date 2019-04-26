@@ -1,20 +1,35 @@
-import React, { Component } from 'react'
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-export class Header extends Component {
+import React, { Component, Fragment } from "react";
+
+
+class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="#">Pride Farm</a>
-          <a className="nav-item right" href="#">Home</a>
-          <a className="nav-item right ml-2" href="#">About</a>
-        </div>
-      </nav>
-    )
+      <Router>
+        <Fragment>
+          <nav className="navbar navbar-default navbar-static-top right">
+            <ul className="nav nav-pills right">
+              <li>
+                <Link to="/" className="active">
+                  Farmers
+                </Link>
+              </li>
+              <li>
+                <Link to="/add-farmer" className="active">
+                  Add farmer
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            {/* <Route path="/" component={Posts} exact />
+            <Route path="/add-post" component={PostForm} /> */}
+          </Switch>
+        </Fragment>
+      </Router>
+    );
   }
 }
-
-export default Header
+export default Navbar;

@@ -1,0 +1,30 @@
+body {
+    color: #666;
+    background-color: #ccc;
+  }
+  
+  
+  /* posts and postform styles */
+  .form-card {
+    margin-top: 40px;
+  }
+  .card-posts {
+    margin-top: 40px;
+  }
+  
+  /*end of posts and postform styles */
+  
+  
+  .navbar {
+    background-color: grey;
+    border-color: grey;
+    padding: 15px;
+  }
+  .navbar .nav-pills > li > a {
+    color: black;
+    margin-right: 10px;
+    float: right !important;
+  }
+  
+  
+  /* End of nav styles */

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types';
-import {getleads, deletelead} from '../../actions/leads'
+import {getleads, deletelead} from "../actions/leads";
 
 
 export class Leads extends Component {
@@ -22,7 +22,6 @@ export class Leads extends Component {
         <table className="table table-striped">
           <thead>
           <tr>
-            <th>ID</th>
             <th>Firstname</th>
             <th>Lastname</th>
             <th>Gender</th>
