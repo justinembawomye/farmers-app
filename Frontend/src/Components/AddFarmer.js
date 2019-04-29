@@ -32,7 +32,7 @@ export class FarmerForm extends Component {
   render() {
     const { username, email, village } = this.state;
     return (
-      <div className="card card-body container">
+      <div className="card card-body container farmers-container">
         <h1>Add Farmer</h1>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">

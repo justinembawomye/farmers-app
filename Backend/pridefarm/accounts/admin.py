@@ -7,7 +7,7 @@ from . models import Farmer, Officer, District, SubCounty, Harvest, Report, Seas
 
 @admin.register(Farmer)
 class FarmerAdmin(admin.ModelAdmin):
-    list_display =('firstname','lastname', 'telephone', 'marriage_status', 'age', 'gender', 'village', 'farm_area', 'crop_type')
+    list_display =('username', 'email',  'village')
    
 @admin.register(Officer)
 class OfficerAdmin(admin.ModelAdmin):

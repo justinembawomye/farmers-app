@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'pridefarm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': "pridefarmers",
+        'NAME': "farmerapp",
         'PASSWORD':'justine',
         'PORT':5432,
         'USER':'postgres',
@@ -98,7 +98,7 @@ DATABASES = {
 }
 
 
-# Password validation
+# Passwofrd validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [

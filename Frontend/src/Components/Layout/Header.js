@@ -1,6 +1,8 @@
 import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import React, { Component, Fragment } from "react";
+import Farmers from "../Farmer";
+import FarmerForm from "../AddFarmer";
 
 
 class Navbar extends Component {
@@ -24,8 +26,8 @@ class Navbar extends Component {
           </nav>
 
           <Switch>
-            {/* <Route path="/" component={Posts} exact />
-            <Route path="/add-post" component={PostForm} /> */}
+            <Route path="/" component={Farmers} exact />
+            <Route path="/add-farmer" component={FarmerForm} />
           </Switch>
         </Fragment>
       </Router>
