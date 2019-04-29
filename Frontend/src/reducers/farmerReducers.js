@@ -1,4 +1,4 @@
-import { GET_FARMERS, DELETE_FARMER} from '../actions/types.js';
+import { GET_FARMERS, DELETE_FARMER, ADD_FARMER} from '../actions/types.js';
 
 const initialState  = {
     farmers:[],
@@ -11,14 +11,19 @@ switch(action.type){
     return {
         ...state,
         farmers:action.payload
-    }
+    };
 
     //case DELETE_FARMERS
     case DELETE_FARMER:
     return {
         ...state,
         farmers:state.farmers.filter(farmer  => farmer.id !== action.payload)
-    }
+    }; 
+    case ADD_FARMER:
+    return {
+        ...state,
+        farmers:action.payload
+    };   
 
     default:
     return state;

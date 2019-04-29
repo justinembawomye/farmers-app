@@ -1,12 +1,15 @@
 from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 
 from .models import Farmer, Officer, District, SubCounty
 
 class FarmerSerializer(ModelSerializer):
-
+    username = serializers.JSONField()
+    email = serializers.JSONField()
+    village = serializers.JSONField()
     class Meta:
         model = Farmer
-        fields= '__all__'
+        fields= ('username','email', 'village')
 
 class FarmersSerializer(ModelSerializer):
 
